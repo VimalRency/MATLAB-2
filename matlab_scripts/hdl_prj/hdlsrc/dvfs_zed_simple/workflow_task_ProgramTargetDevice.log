@@ -1,0 +1,5 @@
+Task "Program Target Device" unsuccessful. See log for details.
+Generated logfile: 
+Device tree compilation failed with message:
+Compiler cannot be found at path "dtc" with message:
+Error connecting to SSH server at 192.168.1.101.

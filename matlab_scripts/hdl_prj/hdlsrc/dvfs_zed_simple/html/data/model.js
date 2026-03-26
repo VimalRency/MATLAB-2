@@ -1,0 +1,1 @@
+var modelInfo = {model:"dvfs_core_hdl"};var modelHierarchy=[{model:"dvfs_core_hdl",relativePath:"_internal.html",parent:"null"},];var AddCode = true;

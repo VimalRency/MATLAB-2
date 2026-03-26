@@ -1,0 +1,11 @@
+/dts-v1/;
+
+// Device tree nodes from board plugin
+/include/ "zynq-zed.dtsi"
+
+// Device tree nodes from reference design plugin
+/include/ "axilite.dtsi"
+
+// Device tree nodes from generated IP core dvfs_core_ip
+/include/ "dvfs_core_ip.dtsi"
+

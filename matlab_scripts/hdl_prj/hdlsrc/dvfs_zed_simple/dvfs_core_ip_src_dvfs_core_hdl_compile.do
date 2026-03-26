@@ -1,0 +1,11 @@
+vlib work
+vmap -c
+vlog  dvfs_core_ip_src_nfp_relop_single.v
+vlog  dvfs_core_ip_src_nfp_add_single.v
+vlog  dvfs_core_ip_src_nfp_relop_single_block.v
+vlog  dvfs_core_ip_src_nfp_convert_double2single.v
+vlog  dvfs_core_ip_src_nfp_mul_single.v
+vlog  dvfs_core_ip_src_LMS_predictor.v
+vlog  dvfs_core_ip_src_nfp_relop_single_block1.v
+vlog  dvfs_core_ip_src_dvfs_fsm.v
+vlog  dvfs_core_ip_src_dvfs_core_hdl.v

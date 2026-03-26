@@ -1,0 +1,9 @@
+dvfs_zed_simple/dvfs_core_hdl/LMS_predictor/nfp_relop_single --> dvfs_core_ip_src_nfp_relop_single
+dvfs_zed_simple/dvfs_core_hdl/LMS_predictor/nfp_add_single --> dvfs_core_ip_src_nfp_add_single
+dvfs_zed_simple/dvfs_core_hdl/LMS_predictor/nfp_relop_single --> dvfs_core_ip_src_nfp_relop_single_block
+dvfs_zed_simple/dvfs_core_hdl/LMS_predictor/nfp_convert_double2single --> dvfs_core_ip_src_nfp_convert_double2single
+dvfs_zed_simple/dvfs_core_hdl/LMS_predictor/nfp_mul_single --> dvfs_core_ip_src_nfp_mul_single
+dvfs_zed_simple/dvfs_core_hdl/LMS_predictor --> dvfs_core_ip_src_LMS_predictor
+dvfs_zed_simple/dvfs_core_hdl/dvfs_fsm/nfp_relop_single --> dvfs_core_ip_src_nfp_relop_single_block1
+dvfs_zed_simple/dvfs_core_hdl/dvfs_fsm --> dvfs_core_ip_src_dvfs_fsm
+dvfs_zed_simple/dvfs_core_hdl --> dvfs_core_ip_src_dvfs_core_hdl

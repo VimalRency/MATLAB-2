@@ -1,0 +1,1111 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Thu Nov 20 11:47:51 2025
+# Process ID         : 4032
+# Current directory  : C:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.runs/synth_1
+# Command line       : vivado.exe -log system_top_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_top_wrapper.tcl
+# Log file           : C:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.runs/synth_1/system_top_wrapper.vds
+# Journal file       : C:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.runs/synth_1\vivado.jou
+# Running On         : VimalRency
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 5 7530U with Radeon Graphics         
+# CPU Frequency      : 1996 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16441 MB
+# Swap memory        : 9892 MB
+# Total Virtual      : 26334 MB
+# Available Virtual  : 2513 MB
+#-----------------------------------------------------------
+source system_top_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 529.887 ; gain = 212.582
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/ipcore'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'.
+INFO: [Project 1-5698] Found the below utility IPs instantiated in block design C:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.srcs/sources_1/bd/system_top/system_top.bd which have equivalent inline hdl with improved performance and reduced diskspace.
+It is recommended to migrate these utility IPs to inline hdl  using the command upgrade_project -migrate_to_inline_hdl.  The utility IPs may be deprecated in future releases.
+More information on inline hdl is available in UG994.
+Utility IP Component Instances:
+ system_top_const_intr_concat_gnd_0
+system_top_intr_concat_0
+Command: synth_design -top system_top_wrapper -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18592
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1287.004 ; gain = 491.602
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_axi_cpu_interconnect_imp_xbar_0/synth/system_top_axi_cpu_interconnect_imp_xbar_0.v:155]
+WARNING: [Synth 8-10507] attribute 'X_INTERFACE_PARAMETER' is already specified; last one will take precedence [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_axi_cpu_interconnect_imp_xbar_0/synth/system_top_axi_cpu_interconnect_imp_xbar_0.v:157]
+INFO: [Synth 8-6157] synthesizing module 'system_top_wrapper' [C:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/hdl/system_top_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'system_top' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:669]
+INFO: [Synth 8-6157] synthesizing module 'system_top_axi_cpu_interconnect_0' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:1000]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1NCVIKJ' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:13]
+INFO: [Synth 8-6157] synthesizing module 'system_top_axi_cpu_interconnect_imp_auto_cc_0' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_axi_cpu_interconnect_imp_auto_cc_0/synth/system_top_axi_cpu_interconnect_imp_auto_cc_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_clock_converter_v2_1_34_axi_clock_converter' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9a28/hdl/axi_clock_converter_v2_1_vl_rfs.v:650]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_clock_converter_v2_1_34_lite_async' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9a28/hdl/axi_clock_converter_v2_1_vl_rfs.v:513]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_handshake' [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_handshake' (0#1) [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6155] done synthesizing module 'axi_clock_converter_v2_1_34_lite_async' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9a28/hdl/axi_clock_converter_v2_1_vl_rfs.v:513]
+INFO: [Synth 8-6157] synthesizing module 'axi_clock_converter_v2_1_34_lite_async__parameterized0' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9a28/hdl/axi_clock_converter_v2_1_vl_rfs.v:513]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_handshake__parameterized0' [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_handshake__parameterized0' (0#1) [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6155] done synthesizing module 'axi_clock_converter_v2_1_34_lite_async__parameterized0' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9a28/hdl/axi_clock_converter_v2_1_vl_rfs.v:513]
+INFO: [Synth 8-6157] synthesizing module 'axi_clock_converter_v2_1_34_lite_async__parameterized1' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9a28/hdl/axi_clock_converter_v2_1_vl_rfs.v:513]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_handshake__parameterized1' [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_handshake__parameterized1' (0#1) [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6155] done synthesizing module 'axi_clock_converter_v2_1_34_lite_async__parameterized1' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9a28/hdl/axi_clock_converter_v2_1_vl_rfs.v:513]
+INFO: [Synth 8-6157] synthesizing module 'axi_clock_converter_v2_1_34_lite_async__parameterized2' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9a28/hdl/axi_clock_converter_v2_1_vl_rfs.v:513]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_handshake__parameterized2' [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_handshake__parameterized2' (0#1) [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6155] done synthesizing module 'axi_clock_converter_v2_1_34_lite_async__parameterized2' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9a28/hdl/axi_clock_converter_v2_1_vl_rfs.v:513]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6155] done synthesizing module 'axi_clock_converter_v2_1_34_axi_clock_converter' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9a28/hdl/axi_clock_converter_v2_1_vl_rfs.v:650]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_axi_cpu_interconnect_imp_auto_cc_0' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_axi_cpu_interconnect_imp_auto_cc_0/synth/system_top_axi_cpu_interconnect_imp_auto_cc_0.v:53]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'system_top_axi_cpu_interconnect_imp_auto_cc_0' is unconnected for instance 'auto_cc' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:136]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'system_top_axi_cpu_interconnect_imp_auto_cc_0' is unconnected for instance 'auto_cc' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:136]
+WARNING: [Synth 8-7023] instance 'auto_cc' of module 'system_top_axi_cpu_interconnect_imp_auto_cc_0' has 42 connections declared, but only 40 given [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:136]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1NCVIKJ' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:13]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1CZFRLX' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:179]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1CZFRLX' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:179]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1EYJ01U' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:306]
+INFO: [Synth 8-6157] synthesizing module 'system_top_axi_cpu_interconnect_imp_auto_pc_0' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_axi_cpu_interconnect_imp_auto_pc_0/synth/system_top_axi_cpu_interconnect_imp_auto_pc_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_36_axi_protocol_converter' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/f0b6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:5285]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_36_b2s' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/f0b6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4704]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_36_b2s_aw_channel' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/f0b6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4360]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_36_b2s_cmd_translator' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/f0b6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3720]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_36_b2s_incr_cmd' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/f0b6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3216]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_36_b2s_incr_cmd' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/f0b6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3216]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_36_b2s_wrap_cmd' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/f0b6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2982]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_36_b2s_wrap_cmd' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/f0b6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2982]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_36_b2s_cmd_translator' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/f0b6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3720]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_36_b2s_wr_cmd_fsm' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/f0b6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3392]
+INFO: [Synth 8-226] default block is never used [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/f0b6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3446]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_36_b2s_wr_cmd_fsm' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/f0b6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3392]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_36_b2s_aw_channel' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/f0b6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4360]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_36_b2s_b_channel' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/f0b6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3906]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_36_b2s_simple_fifo' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/f0b6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2852]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_36_b2s_simple_fifo' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/f0b6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2852]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_36_b2s_simple_fifo__parameterized0' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/f0b6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2852]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_36_b2s_simple_fifo__parameterized0' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/f0b6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2852]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_36_b2s_b_channel' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/f0b6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3906]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_36_b2s_ar_channel' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/f0b6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4516]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_36_b2s_rd_cmd_fsm' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/f0b6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3546]
+INFO: [Synth 8-226] default block is never used [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/f0b6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3608]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_36_b2s_rd_cmd_fsm' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/f0b6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3546]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_36_b2s_ar_channel' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/f0b6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4516]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_36_b2s_r_channel' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/f0b6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4155]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_36_b2s_simple_fifo__parameterized1' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/f0b6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2852]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_36_b2s_simple_fifo__parameterized1' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/f0b6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2852]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_36_b2s_simple_fifo__parameterized2' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/f0b6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2852]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_36_b2s_simple_fifo__parameterized2' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/f0b6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2852]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_36_b2s_r_channel' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/f0b6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4155]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_35_axi_register_slice' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/c5b7/hdl/axi_register_slice_v2_1_vl_rfs.v:3721]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_35_axic_register_slice' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/c5b7/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_35_axic_register_slice' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/c5b7/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_35_axic_register_slice__parameterized0' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/c5b7/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_35_axic_register_slice__parameterized0' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/c5b7/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_35_axic_register_slice__parameterized1' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/c5b7/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_35_axic_register_slice__parameterized1' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/c5b7/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_35_axic_register_slice__parameterized2' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/c5b7/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_35_axic_register_slice__parameterized2' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/c5b7/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_35_axi_register_slice' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/c5b7/hdl/axi_register_slice_v2_1_vl_rfs.v:3721]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_35_axi_register_slice' is unconnected for instance 'SI_REG' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/f0b6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4871]
+WARNING: [Synth 8-7023] instance 'SI_REG' of module 'axi_register_slice_v2_1_35_axi_register_slice' has 93 connections declared, but only 92 given [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/f0b6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4871]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_35_axi_register_slice__parameterized0' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/c5b7/hdl/axi_register_slice_v2_1_vl_rfs.v:3721]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized1' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized1' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized1' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized1' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_35_axic_register_slice__parameterized3' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/c5b7/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_35_axic_register_slice__parameterized3' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/c5b7/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_35_axic_register_slice__parameterized4' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/c5b7/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_35_axic_register_slice__parameterized4' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/c5b7/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_35_axic_register_slice__parameterized5' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/c5b7/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_35_axic_register_slice__parameterized5' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/c5b7/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_35_axic_register_slice__parameterized6' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/c5b7/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_35_axic_register_slice__parameterized6' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/c5b7/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_35_axi_register_slice__parameterized0' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/c5b7/hdl/axi_register_slice_v2_1_vl_rfs.v:3721]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_35_axi_register_slice' is unconnected for instance 'MI_REG' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/f0b6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:5126]
+WARNING: [Synth 8-7023] instance 'MI_REG' of module 'axi_register_slice_v2_1_35_axi_register_slice' has 93 connections declared, but only 92 given [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/f0b6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:5126]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_36_b2s' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/f0b6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4704]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_36_axi_protocol_converter' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/f0b6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:5285]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_axi_cpu_interconnect_imp_auto_pc_0' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_axi_cpu_interconnect_imp_auto_pc_0/synth/system_top_axi_cpu_interconnect_imp_auto_pc_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'system_top_axi_cpu_interconnect_imp_s00_regslice_0' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_axi_cpu_interconnect_imp_s00_regslice_0/synth/system_top_axi_cpu_interconnect_imp_s00_regslice_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_35_axi_register_slice__parameterized1' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/c5b7/hdl/axi_register_slice_v2_1_vl_rfs.v:3721]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_35_axic_register_slice__parameterized7' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/c5b7/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_35_axic_register_slice__parameterized7' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/c5b7/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_35_axic_register_slice__parameterized8' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/c5b7/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_35_axic_register_slice__parameterized8' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/c5b7/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_35_axic_register_slice__parameterized9' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/c5b7/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_35_axic_register_slice__parameterized9' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/c5b7/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_35_axic_register_slice__parameterized10' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/c5b7/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_35_axic_register_slice__parameterized10' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/c5b7/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_35_axi_register_slice__parameterized1' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/c5b7/hdl/axi_register_slice_v2_1_vl_rfs.v:3721]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_axi_cpu_interconnect_imp_s00_regslice_0' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_axi_cpu_interconnect_imp_s00_regslice_0/synth/system_top_axi_cpu_interconnect_imp_s00_regslice_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1EYJ01U' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:306]
+INFO: [Synth 8-6157] synthesizing module 'system_top_axi_cpu_interconnect_imp_xbar_0' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_axi_cpu_interconnect_imp_xbar_0/synth/system_top_axi_cpu_interconnect_imp_xbar_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_37_axi_crossbar' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/a1a7/hdl/axi_crossbar_v2_1_vl_rfs.v:4871]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_37_crossbar_sasd' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/a1a7/hdl/axi_crossbar_v2_1_vl_rfs.v:1234]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_37_addr_decoder' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/a1a7/hdl/axi_crossbar_v2_1_vl_rfs.v:790]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_comparator_static' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2119]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_carry_and' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_carry_and' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_comparator_static' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2119]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_37_addr_decoder' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/a1a7/hdl/axi_crossbar_v2_1_vl_rfs.v:790]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_37_decerr_slave' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/a1a7/hdl/axi_crossbar_v2_1_vl_rfs.v:3493]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_37_decerr_slave' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/a1a7/hdl/axi_crossbar_v2_1_vl_rfs.v:3493]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_37_addr_arbiter_sasd' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/a1a7/hdl/axi_crossbar_v2_1_vl_rfs.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_37_addr_arbiter_sasd' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/a1a7/hdl/axi_crossbar_v2_1_vl_rfs.v:63]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_37_splitter' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/a1a7/hdl/axi_crossbar_v2_1_vl_rfs.v:4451]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_37_splitter' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/a1a7/hdl/axi_crossbar_v2_1_vl_rfs.v:4451]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_37_splitter__parameterized0' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/a1a7/hdl/axi_crossbar_v2_1_vl_rfs.v:4451]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_37_splitter__parameterized0' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/a1a7/hdl/axi_crossbar_v2_1_vl_rfs.v:4451]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_mux_enc' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_mux_enc' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized0' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized0' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized1' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized1' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_35_axic_register_slice__parameterized11' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/c5b7/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_35_axic_register_slice__parameterized11' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/c5b7/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized2' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_2_mux_enc__parameterized2' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/0c28/hdl/generic_baseblocks_v2_1_vl_rfs.v:2436]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_37_crossbar_sasd' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/a1a7/hdl/axi_crossbar_v2_1_vl_rfs.v:1234]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_37_axi_crossbar' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/a1a7/hdl/axi_crossbar_v2_1_vl_rfs.v:4871]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_axi_cpu_interconnect_imp_xbar_0' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_axi_cpu_interconnect_imp_xbar_0/synth/system_top_axi_cpu_interconnect_imp_xbar_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_axi_cpu_interconnect_0' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:1000]
+WARNING: [Synth 8-7071] port 'M01_AXI_araddr' of module 'system_top_axi_cpu_interconnect_0' is unconnected for instance 'axi_cpu_interconnect' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:799]
+WARNING: [Synth 8-7071] port 'M01_AXI_arprot' of module 'system_top_axi_cpu_interconnect_0' is unconnected for instance 'axi_cpu_interconnect' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:799]
+WARNING: [Synth 8-7071] port 'M01_AXI_arvalid' of module 'system_top_axi_cpu_interconnect_0' is unconnected for instance 'axi_cpu_interconnect' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:799]
+WARNING: [Synth 8-7071] port 'M01_AXI_awaddr' of module 'system_top_axi_cpu_interconnect_0' is unconnected for instance 'axi_cpu_interconnect' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:799]
+WARNING: [Synth 8-7071] port 'M01_AXI_awprot' of module 'system_top_axi_cpu_interconnect_0' is unconnected for instance 'axi_cpu_interconnect' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:799]
+WARNING: [Synth 8-7071] port 'M01_AXI_awvalid' of module 'system_top_axi_cpu_interconnect_0' is unconnected for instance 'axi_cpu_interconnect' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:799]
+WARNING: [Synth 8-7071] port 'M01_AXI_bready' of module 'system_top_axi_cpu_interconnect_0' is unconnected for instance 'axi_cpu_interconnect' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:799]
+WARNING: [Synth 8-7071] port 'M01_AXI_rready' of module 'system_top_axi_cpu_interconnect_0' is unconnected for instance 'axi_cpu_interconnect' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:799]
+WARNING: [Synth 8-7071] port 'M01_AXI_wdata' of module 'system_top_axi_cpu_interconnect_0' is unconnected for instance 'axi_cpu_interconnect' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:799]
+WARNING: [Synth 8-7071] port 'M01_AXI_wstrb' of module 'system_top_axi_cpu_interconnect_0' is unconnected for instance 'axi_cpu_interconnect' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:799]
+WARNING: [Synth 8-7071] port 'M01_AXI_wvalid' of module 'system_top_axi_cpu_interconnect_0' is unconnected for instance 'axi_cpu_interconnect' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:799]
+WARNING: [Synth 8-7023] instance 'axi_cpu_interconnect' of module 'system_top_axi_cpu_interconnect_0' has 82 connections declared, but only 71 given [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:799]
+INFO: [Synth 8-6157] synthesizing module 'system_top_const_intr_concat_gnd_0' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_const_intr_concat_gnd_0/synth/system_top_const_intr_concat_gnd_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_10_xlconstant' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/a165/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_10_xlconstant' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/a165/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_const_intr_concat_gnd_0' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_const_intr_concat_gnd_0/synth/system_top_const_intr_concat_gnd_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'system_top_core_clkwiz_0' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_core_clkwiz_0/system_top_core_clkwiz_0.v:65]
+INFO: [Synth 8-6157] synthesizing module 'system_top_core_clkwiz_0_clk_wiz' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_core_clkwiz_0/system_top_core_clkwiz_0_clk_wiz.v:65]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:2678]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:2678]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89421]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:89421]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_core_clkwiz_0_clk_wiz' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_core_clkwiz_0/system_top_core_clkwiz_0_clk_wiz.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_core_clkwiz_0' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_core_clkwiz_0/system_top_core_clkwiz_0.v:65]
+INFO: [Synth 8-6157] synthesizing module 'system_top_dvfs_core_ip_0_0' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_dvfs_core_ip_0_0/synth/system_top_dvfs_core_ip_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip.v:28]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_dut' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_dut.v:21]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_src_dvfs_core_hdl' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_src_dvfs_core_hdl.v:42]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_src_LMS_predictor' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_src_LMS_predictor.v:25]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_src_nfp_convert_double2single' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_src_nfp_convert_double2single.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_src_nfp_convert_double2single' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_src_nfp_convert_double2single.v:24]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_src_nfp_mul_single' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_src_nfp_mul_single.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_src_nfp_mul_single' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_src_nfp_mul_single.v:26]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_src_nfp_add_single' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_src_nfp_add_single.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_src_nfp_add_single' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_src_nfp_add_single.v:24]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_src_nfp_relop_single_block' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_src_nfp_relop_single_block.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_src_nfp_relop_single_block' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_src_nfp_relop_single_block.v:24]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_src_nfp_relop_single' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_src_nfp_relop_single.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_src_nfp_relop_single' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_src_nfp_relop_single.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_src_LMS_predictor' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_src_LMS_predictor.v:25]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_src_dvfs_fsm' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_src_dvfs_fsm.v:24]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_src_nfp_relop_single_block1' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_src_nfp_relop_single_block1.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_src_nfp_relop_single_block1' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_src_nfp_relop_single_block1.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_src_dvfs_fsm' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_src_dvfs_fsm.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_src_dvfs_core_hdl' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_src_dvfs_core_hdl.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_dut' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_dut.v:21]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_reset_sync' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_reset_sync.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_reset_sync' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_reset_sync.v:21]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_axi_lite' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_axi_lite.v:21]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_addr_decoder' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_addr_decoder.v:21]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_addr_decoder_write' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_addr_decoder_write.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_addr_decoder_write' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_addr_decoder_write.v:21]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_addr_decoder_read' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_addr_decoder_read.v:21]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_pulse_sync' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_pulse_sync.v:21]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_sync_receive_clk' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_sync_receive_clk.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_sync_receive_clk' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_sync_receive_clk.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_pulse_sync' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_pulse_sync.v:21]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_addr_decoder_read_registers' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_addr_decoder_read_registers.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_addr_decoder_read_registers' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_addr_decoder_read_registers.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_addr_decoder_read' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_addr_decoder_read.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_addr_decoder' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_addr_decoder.v:21]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_axi_lite_module' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_axi_lite_module.v:21]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_write_data_sync' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_write_data_sync.v:21]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_write_sync_receive_clk' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_write_sync_receive_clk.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_write_sync_receive_clk' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_write_sync_receive_clk.v:21]
+INFO: [Synth 8-226] default block is never used [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_write_data_sync.v:188]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_write_data_sync' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_write_data_sync.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_axi_lite_module' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_axi_lite_module.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_axi_lite' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip_axi_lite.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/ce23/hdl/dvfs_core_ip.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_dvfs_core_ip_0_0' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_dvfs_core_ip_0_0/synth/system_top_dvfs_core_ip_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'system_top_intr_concat_0' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_intr_concat_0/synth/system_top_intr_concat_0.v:53]
+INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_7_xlconcat' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9c1a/hdl/xlconcat_v2_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'system_top_intr_concat_0' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_intr_concat_0/synth/system_top_intr_concat_0.v:53]
+INFO: [Synth 8-638] synthesizing module 'system_top_sys_100m_rstgen_0' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_sys_100m_rstgen_0/synth/system_top_sys_100m_rstgen_0.vhd:74]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1243' bound to instance 'U0' of component 'proc_sys_reset' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_sys_100m_rstgen_0/synth/system_top_sys_100m_rstgen_0.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1302]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1371]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1387]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1413]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1436]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1460]
+INFO: [Synth 8-638] synthesizing module 'lpf' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
+INFO: [Synth 8-3491] module 'SRL16' declared at 'C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:158596' bound to instance 'POR_SRL_I' of component 'SRL16' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:873]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (0#1) [C:/Xilinx/2025.1/Vivado/scripts/rt/data/unisim_comp.v:158596]
+INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'ACT_LO_EXT' of component 'xpm_cdc_single' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:968]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'ACT_LO_AUX' of component 'xpm_cdc_single' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1015]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:304]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:304]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1302]
+INFO: [Synth 8-256] done synthesizing module 'system_top_sys_100m_rstgen_0' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_sys_100m_rstgen_0/synth/system_top_sys_100m_rstgen_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'system_top_sys_100m_rstgen_0' is unconnected for instance 'sys_100m_rstgen' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:918]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'system_top_sys_100m_rstgen_0' is unconnected for instance 'sys_100m_rstgen' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:918]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'system_top_sys_100m_rstgen_0' is unconnected for instance 'sys_100m_rstgen' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:918]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'system_top_sys_100m_rstgen_0' is unconnected for instance 'sys_100m_rstgen' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:918]
+WARNING: [Synth 8-7023] instance 'sys_100m_rstgen' of module 'system_top_sys_100m_rstgen_0' has 10 connections declared, but only 6 given [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:918]
+INFO: [Synth 8-638] synthesizing module 'system_top_sys_core_rstgen_0' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_sys_core_rstgen_0/synth/system_top_sys_core_rstgen_0.vhd:74]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1243' bound to instance 'U0' of component 'proc_sys_reset' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_sys_core_rstgen_0/synth/system_top_sys_core_rstgen_0.vhd:139]
+INFO: [Synth 8-256] done synthesizing module 'system_top_sys_core_rstgen_0' (0#1) [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_sys_core_rstgen_0/synth/system_top_sys_core_rstgen_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'system_top_sys_core_rstgen_0' is unconnected for instance 'sys_core_rstgen' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:925]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'system_top_sys_core_rstgen_0' is unconnected for instance 'sys_core_rstgen' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:925]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'system_top_sys_core_rstgen_0' is unconnected for instance 'sys_core_rstgen' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:925]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'system_top_sys_core_rstgen_0' is unconnected for instance 'sys_core_rstgen' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:925]
+WARNING: [Synth 8-7023] instance 'sys_core_rstgen' of module 'system_top_sys_core_rstgen_0' has 10 connections declared, but only 6 given [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:925]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_sys_cpu_0/synth/system_top_sys_cpu_0.v:355]
+WARNING: [Synth 8-7071] port 'M_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_sys_cpu_0/synth/system_top_sys_cpu_0.v:355]
+WARNING: [Synth 8-7071] port 'S_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_sys_cpu_0/synth/system_top_sys_cpu_0.v:355]
+WARNING: [Synth 8-7071] port 'S_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_sys_cpu_0/synth/system_top_sys_cpu_0.v:355]
+WARNING: [Synth 8-7071] port 'S_AXI_ACP_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_sys_cpu_0/synth/system_top_sys_cpu_0.v:355]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_sys_cpu_0/synth/system_top_sys_cpu_0.v:355]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_sys_cpu_0/synth/system_top_sys_cpu_0.v:355]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_sys_cpu_0/synth/system_top_sys_cpu_0.v:355]
+WARNING: [Synth 8-7071] port 'S_AXI_HP3_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_sys_cpu_0/synth/system_top_sys_cpu_0.v:355]
+WARNING: [Synth 8-7071] port 'DMA0_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_sys_cpu_0/synth/system_top_sys_cpu_0.v:355]
+WARNING: [Synth 8-7071] port 'DMA1_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_sys_cpu_0/synth/system_top_sys_cpu_0.v:355]
+WARNING: [Synth 8-7071] port 'DMA2_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_sys_cpu_0/synth/system_top_sys_cpu_0.v:355]
+WARNING: [Synth 8-7071] port 'DMA3_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_sys_cpu_0/synth/system_top_sys_cpu_0.v:355]
+WARNING: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_sys_cpu_0/synth/system_top_sys_cpu_0.v:355]
+WARNING: [Synth 8-7071] port 'GPIO_O' of module 'system_top_sys_cpu_0' is unconnected for instance 'sys_cpu' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:932]
+WARNING: [Synth 8-7071] port 'GPIO_T' of module 'system_top_sys_cpu_0' is unconnected for instance 'sys_cpu' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:932]
+WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'system_top_sys_cpu_0' is unconnected for instance 'sys_cpu' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:932]
+WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'system_top_sys_cpu_0' is unconnected for instance 'sys_cpu' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:932]
+WARNING: [Synth 8-7071] port 'FCLK_CLK1' of module 'system_top_sys_cpu_0' is unconnected for instance 'sys_cpu' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:932]
+WARNING: [Synth 8-7071] port 'FCLK_RESET1_N' of module 'system_top_sys_cpu_0' is unconnected for instance 'sys_cpu' [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:932]
+WARNING: [Synth 8-7023] instance 'sys_cpu' of module 'system_top_sys_cpu_0' has 71 connections declared, but only 65 given [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/synth/system_top.v:932]
+WARNING: [Synth 8-6014] Unused sequential element dest_req_ext_ff_reg was removed.  [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:623]
+WARNING: [Synth 8-6014] Unused sequential element dest_req_ext_ff_reg was removed.  [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:623]
+WARNING: [Synth 8-6014] Unused sequential element dest_req_ext_ff_reg was removed.  [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:623]
+WARNING: [Synth 8-6014] Unused sequential element dest_req_ext_ff_reg was removed.  [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:623]
+WARNING: [Synth 8-6014] Unused sequential element state_r1_reg was removed.  [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/f0b6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3596]
+WARNING: [Synth 8-6014] Unused sequential element s_arlen_r_reg was removed.  [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/f0b6/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3597]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_aw_trans_seq_i_reg was removed.  [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/a1a7/hdl/axi_crossbar_v2_1_vl_rfs.v:2051]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_ar_trans_seq_i_reg was removed.  [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/a1a7/hdl/axi_crossbar_v2_1_vl_rfs.v:2062]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_w_beat_cnt_i_reg was removed.  [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/a1a7/hdl/axi_crossbar_v2_1_vl_rfs.v:2073]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_r_beat_cnt_i_reg was removed.  [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/a1a7/hdl/axi_crossbar_v2_1_vl_rfs.v:2086]
+WARNING: [Synth 8-7129] Port ENET0_GMII_COL in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_CRS in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RX_DV in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RX_ER in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[7] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[6] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[5] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[4] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[3] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[1] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[0] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_COL in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_CRS in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RX_DV in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RX_ER in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[7] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[6] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[5] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[4] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[3] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[1] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[0] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_GP0_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_GP0_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_GP1_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_GP1_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ACP_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ACP_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP0_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP0_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP1_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP1_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP2_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP2_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP3_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP3_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FCLK_CLKTRIG3_N in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FCLK_CLKTRIG2_N in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FCLK_CLKTRIG1_N in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FCLK_CLKTRIG0_N in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[31] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[30] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[29] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[28] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[27] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[26] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[25] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[24] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[23] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[22] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[21] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[20] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[19] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[18] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[17] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[16] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[15] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[14] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[13] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[12] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[11] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[10] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[9] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[8] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[7] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[6] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[5] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[4] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[3] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[1] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[0] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_VALID in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[3] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[1] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[0] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_clk in module xpm_cdc_single__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In32[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In33[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In34[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In35[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 1595.168 ; gain = 799.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:38 . Memory (MB): peak = 1595.168 ; gain = 799.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:38 . Memory (MB): peak = 1595.168 ; gain = 799.766
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.346 . Memory (MB): peak = 1595.168 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_core_clkwiz_0/system_top_core_clkwiz_0_board.xdc] for cell 'system_top_i/core_clkwiz/inst'
+Finished Parsing XDC File [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_core_clkwiz_0/system_top_core_clkwiz_0_board.xdc] for cell 'system_top_i/core_clkwiz/inst'
+Parsing XDC File [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_core_clkwiz_0/system_top_core_clkwiz_0.xdc] for cell 'system_top_i/core_clkwiz/inst'
+Finished Parsing XDC File [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_core_clkwiz_0/system_top_core_clkwiz_0.xdc] for cell 'system_top_i/core_clkwiz/inst'
+Parsing XDC File [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_sys_100m_rstgen_0/system_top_sys_100m_rstgen_0_board.xdc] for cell 'system_top_i/sys_100m_rstgen/U0'
+Finished Parsing XDC File [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_sys_100m_rstgen_0/system_top_sys_100m_rstgen_0_board.xdc] for cell 'system_top_i/sys_100m_rstgen/U0'
+Parsing XDC File [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_sys_core_rstgen_0/system_top_sys_core_rstgen_0_board.xdc] for cell 'system_top_i/sys_core_rstgen/U0'
+Finished Parsing XDC File [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_sys_core_rstgen_0/system_top_sys_core_rstgen_0_board.xdc] for cell 'system_top_i/sys_core_rstgen/U0'
+Parsing XDC File [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_sys_cpu_0/system_top_sys_cpu_0.xdc] for cell 'system_top_i/sys_cpu/inst'
+Finished Parsing XDC File [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_sys_cpu_0/system_top_sys_cpu_0.xdc] for cell 'system_top_i/sys_cpu/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_sys_cpu_0/system_top_sys_cpu_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_top_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_top_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_dvfs_core_ip_0_0/constraint/dvfs_core_ip_src_dvfs_core_hdl_interface_constraints.xdc] for cell 'system_top_i/dvfs_core_ip_0/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_dvfs_core_ip_0_0/constraint/dvfs_core_ip_src_dvfs_core_hdl_interface_constraints.xdc:8]
+Finished Parsing XDC File [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_dvfs_core_ip_0_0/constraint/dvfs_core_ip_src_dvfs_core_hdl_interface_constraints.xdc] for cell 'system_top_i/dvfs_core_ip_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_dvfs_core_ip_0_0/constraint/dvfs_core_ip_src_dvfs_core_hdl_interface_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_top_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_top_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_top_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_top_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_axi_cpu_interconnect_imp_s00_regslice_0/system_top_axi_cpu_interconnect_imp_s00_regslice_0_clocks.xdc] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/s00_regslice/inst'
+Finished Parsing XDC File [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ip/system_top_axi_cpu_interconnect_imp_s00_regslice_0/system_top_axi_cpu_interconnect_imp_s00_regslice_0_clocks.xdc] for cell 'system_top_i/axi_cpu_interconnect/s00_couplers/s00_regslice/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_top_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_top_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_top_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_top_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 19 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1595.168 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  SRL16 => SRL16E: 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.116 . Memory (MB): peak = 1595.168 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:53 ; elapsed = 00:01:02 . Memory (MB): peak = 1595.168 ; gain = 799.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:53 ; elapsed = 00:01:02 . Memory (MB): peak = 1595.168 ; gain = 799.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:01:03 . Memory (MB): peak = 1595.168 ; gain = 799.766
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'src_state_reg' in module 'axi_clock_converter_v2_1_34_lite_async__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'dest_state_reg' in module 'axi_clock_converter_v2_1_34_lite_async__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'src_state_reg' in module 'axi_clock_converter_v2_1_34_lite_async'
+INFO: [Synth 8-802] inferred FSM for state register 'dest_state_reg' in module 'axi_clock_converter_v2_1_34_lite_async'
+INFO: [Synth 8-802] inferred FSM for state register 'src_state_reg' in module 'axi_clock_converter_v2_1_34_lite_async__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'dest_state_reg' in module 'axi_clock_converter_v2_1_34_lite_async__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'src_state_reg' in module 'axi_clock_converter_v2_1_34_lite_async__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'dest_state_reg' in module 'axi_clock_converter_v2_1_34_lite_async__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'src_state_reg' in module 'axi_clock_converter_v2_1_34_lite_async__parameterized2'
+INFO: [Synth 8-802] inferred FSM for state register 'dest_state_reg' in module 'axi_clock_converter_v2_1_34_lite_async__parameterized2'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_protocol_converter_v2_1_36_b2s_wr_cmd_fsm'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_protocol_converter_v2_1_36_b2s_rd_cmd_fsm'
+INFO: [Synth 8-802] inferred FSM for state register 'axi_lite_wstate_reg' in module 'dvfs_core_ip_axi_lite_module'
+INFO: [Synth 8-802] inferred FSM for state register 'axi_lite_rstate_reg' in module 'dvfs_core_ip_axi_lite_module'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                SRC_IDLE |                               00 |                               00
+            SRC_DRV_SEND |                               01 |                               01
+       SRC_WAIT_RCV_DONE |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'src_state_reg' using encoding 'sequential' in module 'axi_clock_converter_v2_1_34_lite_async__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               DEST_IDLE |                              001 |                               00
+          DEST_DRV_VALID |                              010 |                               01
+            DEST_DRV_ACK |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'dest_state_reg' using encoding 'one-hot' in module 'axi_clock_converter_v2_1_34_lite_async__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                SRC_IDLE |                               00 |                               00
+            SRC_DRV_SEND |                               01 |                               01
+       SRC_WAIT_RCV_DONE |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'src_state_reg' using encoding 'sequential' in module 'axi_clock_converter_v2_1_34_lite_async'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               DEST_IDLE |                              001 |                               00
+          DEST_DRV_VALID |                              010 |                               01
+            DEST_DRV_ACK |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'dest_state_reg' using encoding 'one-hot' in module 'axi_clock_converter_v2_1_34_lite_async'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                SRC_IDLE |                               00 |                               00
+            SRC_DRV_SEND |                               01 |                               01
+       SRC_WAIT_RCV_DONE |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'src_state_reg' using encoding 'sequential' in module 'axi_clock_converter_v2_1_34_lite_async__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               DEST_IDLE |                              001 |                               00
+          DEST_DRV_VALID |                              010 |                               01
+            DEST_DRV_ACK |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'dest_state_reg' using encoding 'one-hot' in module 'axi_clock_converter_v2_1_34_lite_async__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                SRC_IDLE |                               00 |                               00
+            SRC_DRV_SEND |                               01 |                               01
+       SRC_WAIT_RCV_DONE |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'src_state_reg' using encoding 'sequential' in module 'axi_clock_converter_v2_1_34_lite_async__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               DEST_IDLE |                              001 |                               00
+          DEST_DRV_VALID |                              010 |                               01
+            DEST_DRV_ACK |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'dest_state_reg' using encoding 'one-hot' in module 'axi_clock_converter_v2_1_34_lite_async__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                SRC_IDLE |                               00 |                               00
+            SRC_DRV_SEND |                               01 |                               01
+       SRC_WAIT_RCV_DONE |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'src_state_reg' using encoding 'sequential' in module 'axi_clock_converter_v2_1_34_lite_async__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               DEST_IDLE |                              001 |                               00
+          DEST_DRV_VALID |                              010 |                               01
+            DEST_DRV_ACK |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'dest_state_reg' using encoding 'one-hot' in module 'axi_clock_converter_v2_1_34_lite_async__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 SM_IDLE |                               01 |                               00
+               SM_CMD_EN |                               11 |                               01
+         SM_CMD_ACCEPTED |                               10 |                               10
+            SM_DONE_WAIT |                               00 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi_protocol_converter_v2_1_36_b2s_wr_cmd_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 SM_IDLE |                               01 |                               00
+               SM_CMD_EN |                               11 |                               01
+         SM_CMD_ACCEPTED |                               10 |                               10
+                 SM_DONE |                               00 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi_protocol_converter_v2_1_36_b2s_rd_cmd_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                         00000000
+                  iSTATE |                             0010 |                         00000001
+                 iSTATE0 |                             0100 |                         00000010
+                 iSTATE1 |                             1000 |                         00000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'axi_lite_rstate_reg' using encoding 'one-hot' in module 'dvfs_core_ip_axi_lite_module'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                         00000000
+                  iSTATE |                             0010 |                         00000001
+                 iSTATE0 |                             0100 |                         00000010
+                 iSTATE1 |                             1000 |                         00000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'axi_lite_wstate_reg' using encoding 'one-hot' in module 'dvfs_core_ip_axi_lite_module'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:58 ; elapsed = 00:01:07 . Memory (MB): peak = 1595.168 ; gain = 799.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   44 Bit       Adders := 1     
+	   2 Input   43 Bit       Adders := 1     
+	   2 Input   28 Bit       Adders := 1     
+	   2 Input   27 Bit       Adders := 2     
+	   2 Input   25 Bit       Adders := 2     
+	   2 Input   24 Bit       Adders := 2     
+	   2 Input   12 Bit       Adders := 10    
+	   3 Input   12 Bit       Adders := 1     
+	   3 Input   10 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 3     
+	   2 Input    8 Bit       Adders := 7     
+	   3 Input    8 Bit       Adders := 3     
+	   2 Input    6 Bit       Adders := 6     
+	   2 Input    5 Bit       Adders := 5     
+	   2 Input    4 Bit       Adders := 4     
+	   2 Input    3 Bit       Adders := 12    
+	   2 Input    2 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 8     
++---Registers : 
+	               66 Bit    Registers := 6     
+	               64 Bit    Registers := 5     
+	               53 Bit    Registers := 4     
+	               52 Bit    Registers := 1     
+	               49 Bit    Registers := 3     
+	               47 Bit    Registers := 4     
+	               45 Bit    Registers := 1     
+	               42 Bit    Registers := 1     
+	               36 Bit    Registers := 4     
+	               34 Bit    Registers := 2     
+	               32 Bit    Registers := 10    
+	               31 Bit    Registers := 1     
+	               30 Bit    Registers := 1     
+	               29 Bit    Registers := 1     
+	               28 Bit    Registers := 6     
+	               27 Bit    Registers := 4     
+	               26 Bit    Registers := 7     
+	               25 Bit    Registers := 1     
+	               24 Bit    Registers := 4     
+	               23 Bit    Registers := 32    
+	               19 Bit    Registers := 4     
+	               18 Bit    Registers := 2     
+	               16 Bit    Registers := 2     
+	               14 Bit    Registers := 5     
+	               12 Bit    Registers := 11    
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 5     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 53    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 7     
+	                5 Bit    Registers := 8     
+	                4 Bit    Registers := 23    
+	                3 Bit    Registers := 26    
+	                2 Bit    Registers := 24    
+	                1 Bit    Registers := 275   
++---Muxes : 
+	   2 Input   66 Bit        Muxes := 4     
+	   2 Input   64 Bit        Muxes := 1     
+	   2 Input   53 Bit        Muxes := 2     
+	   2 Input   49 Bit        Muxes := 3     
+	   2 Input   47 Bit        Muxes := 5     
+	   2 Input   41 Bit        Muxes := 1     
+	   2 Input   36 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 10    
+	   2 Input   28 Bit        Muxes := 2     
+	   2 Input   27 Bit        Muxes := 2     
+	   3 Input   26 Bit        Muxes := 3     
+	   2 Input   25 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 3     
+	   4 Input   24 Bit        Muxes := 1     
+	   2 Input   23 Bit        Muxes := 15    
+	   2 Input   14 Bit        Muxes := 2     
+	   2 Input   12 Bit        Muxes := 6     
+	   2 Input   11 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 3     
+	   4 Input   10 Bit        Muxes := 1     
+	   3 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 6     
+	   2 Input    8 Bit        Muxes := 40    
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 7     
+	   3 Input    6 Bit        Muxes := 1     
+	   6 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 11    
+	   3 Input    5 Bit        Muxes := 1     
+	   4 Input    5 Bit        Muxes := 2     
+	   6 Input    5 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 28    
+	   3 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 3     
+	   2 Input    3 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 5     
+	   2 Input    2 Bit        Muxes := 31    
+	   4 Input    2 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 133   
+	   3 Input    1 Bit        Muxes := 50    
+	   4 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/c5b7/hdl/axi_register_slice_v2_1_vl_rfs.v:1726]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/c5b7/hdl/axi_register_slice_v2_1_vl_rfs.v:1726]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg' and it is trimmed from '36' to '35' bits. [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/c5b7/hdl/axi_register_slice_v2_1_vl_rfs.v:1726]
+DSP Report: Generating DSP Delay8_reg_reg[0], operation Mode is: (C+A2*B2)'.
+DSP Report: register Delay24_out1_reg is absorbed into DSP Delay8_reg_reg[0].
+DSP Report: register M_to_1_M_out1_reg is absorbed into DSP Delay8_reg_reg[0].
+DSP Report: register Delay8_reg_reg[0] is absorbed into DSP Delay8_reg_reg[0].
+DSP Report: operator Product_out1 is absorbed into DSP Delay8_reg_reg[0].
+DSP Report: operator Product_out1 is absorbed into DSP Delay8_reg_reg[0].
+WARNING: [Synth 8-3332] Sequential element (FDRE_inst) is unused and will be removed from module proc_sys_reset__xdcDup__1.
+WARNING: [Synth 8-3332] Sequential element (BSR_OUT_DFF[0].FDRE_BSR) is unused and will be removed from module proc_sys_reset__xdcDup__1.
+WARNING: [Synth 8-3332] Sequential element (ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N) is unused and will be removed from module proc_sys_reset__xdcDup__1.
+WARNING: [Synth 8-3332] Sequential element (PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module proc_sys_reset__xdcDup__1.
+WARNING: [Synth 8-3332] Sequential element (FDRE_inst) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (BSR_OUT_DFF[0].FDRE_BSR) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module proc_sys_reset.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:28 ; elapsed = 00:01:38 . Memory (MB): peak = 1621.352 ; gain = 825.949
+---------------------------------------------------------------------------------
+ Sort Area is  Delay8_reg_reg[0]_0 : 0 0 : 3090 3090 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++--------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                     | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dvfs_core_ip_src_nfp_mul_single | (C+A2*B2)'  | 24     | 17     | 41     | -      | 42     | 1    | 1    | 0    | -    | -     | 0    | 1    | 
++--------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:44 ; elapsed = 00:01:56 . Memory (MB): peak = 1862.793 ; gain = 1067.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:50 ; elapsed = 00:02:02 . Memory (MB): peak = 1935.680 ; gain = 1140.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:55 ; elapsed = 00:02:08 . Memory (MB): peak = 1953.789 ; gain = 1158.387
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9a28/hdl/axi_clock_converter_v2_1_vl_rfs.v:540]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9a28/hdl/axi_clock_converter_v2_1_vl_rfs.v:552]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9a28/hdl/axi_clock_converter_v2_1_vl_rfs.v:541]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9a28/hdl/axi_clock_converter_v2_1_vl_rfs.v:596]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9a28/hdl/axi_clock_converter_v2_1_vl_rfs.v:541]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9a28/hdl/axi_clock_converter_v2_1_vl_rfs.v:553]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9a28/hdl/axi_clock_converter_v2_1_vl_rfs.v:553]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:583]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:221]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:221]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:221]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9a28/hdl/axi_clock_converter_v2_1_vl_rfs.v:597]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9a28/hdl/axi_clock_converter_v2_1_vl_rfs.v:597]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9a28/hdl/axi_clock_converter_v2_1_vl_rfs.v:597]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:594]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:221]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:221]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:221]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:594]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:221]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:221]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:221]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9a28/hdl/axi_clock_converter_v2_1_vl_rfs.v:597]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9a28/hdl/axi_clock_converter_v2_1_vl_rfs.v:597]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [c:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.gen/sources_1/bd/system_top/ipshared/9a28/hdl/axi_clock_converter_v2_1_vl_rfs.v:597]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:594]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:221]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:221]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:221]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:592]
+INFO: [Common 17-14] Message 'Synth 8-5396' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:04 ; elapsed = 00:02:17 . Memory (MB): peak = 2132.418 ; gain = 1337.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:04 ; elapsed = 00:02:17 . Memory (MB): peak = 2132.418 ; gain = 1337.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:05 ; elapsed = 00:02:18 . Memory (MB): peak = 2132.418 ; gain = 1337.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:05 ; elapsed = 00:02:18 . Memory (MB): peak = 2132.418 ; gain = 1337.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:06 ; elapsed = 00:02:19 . Memory (MB): peak = 2132.418 ; gain = 1337.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:06 ; elapsed = 00:02:19 . Memory (MB): peak = 2132.418 ; gain = 1337.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name  | RTL Name                                                                                                                                                                   | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|dvfs_core_ip | u_dvfs_core_ip_dut_inst/u_dvfs_core_ip_src_dvfs_core_hdl/u_LMS_predictor/u_dvfs_zed_simple_dvfs_core_hdl_LMS_predictor_nfp_convert_double2single/Delay23_PS_5_reg_reg[3]   | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|dvfs_core_ip | u_dvfs_core_ip_dut_inst/u_dvfs_core_ip_src_dvfs_core_hdl/u_LMS_predictor/u_dvfs_zed_simple_dvfs_core_hdl_LMS_predictor_nfp_convert_double2single/Delay33_PS_2_5_reg_reg[3] | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|dvfs_core_ip | u_dvfs_core_ip_dut_inst/u_dvfs_core_ip_src_dvfs_core_hdl/u_LMS_predictor/u_dvfs_zed_simple_dvfs_core_hdl_LMS_predictor_nfp_convert_double2single/Delay32_PS_2_5_reg_reg[4] | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|dvfs_core_ip | u_dvfs_core_ip_dut_inst/u_dvfs_core_ip_src_dvfs_core_hdl/u_LMS_predictor/u_nfp_mul_comp/Delay8_reg_1_reg[3]                                                                | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|dvfs_core_ip | u_dvfs_core_ip_dut_inst/u_dvfs_core_ip_src_dvfs_core_hdl/u_LMS_predictor/u_nfp_mul_comp/Delay13_reg_reg[5]                                                                 | 6      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|dvfs_core_ip | u_dvfs_core_ip_dut_inst/u_dvfs_core_ip_src_dvfs_core_hdl/u_LMS_predictor/u_nfp_add_comp/Delay18_reg_reg[7]                                                                 | 8      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|dvfs_core_ip | u_dvfs_core_ip_dut_inst/u_dvfs_core_ip_src_dvfs_core_hdl/u_LMS_predictor/u_nfp_add_comp/Delay6_reg_reg[1]                                                                  | 10     | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|dvfs_core_ip | u_dvfs_core_ip_dut_inst/u_dvfs_core_ip_src_dvfs_core_hdl/u_LMS_predictor/u_nfp_add_comp/Delay2_reg_reg[3][7]                                                               | 4      | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|dvfs_core_ip | u_dvfs_core_ip_dut_inst/u_dvfs_core_ip_src_dvfs_core_hdl/u_LMS_predictor/u_nfp_add_comp/Delay17_reg_reg[6][22]                                                             | 8      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|dvfs_core_ip | u_dvfs_core_ip_dut_inst/u_dvfs_core_ip_src_dvfs_core_hdl/u_LMS_predictor/u_nfp_add_comp/Delay17_reg_reg[6][21]                                                             | 5      | 22    | YES          | NO                 | YES               | 22     | 0       | 
+|dvfs_core_ip | u_dvfs_core_ip_dut_inst/u_dvfs_core_ip_src_dvfs_core_hdl/u_LMS_predictor/u_nfp_add_comp/Delay15_reg_reg[7][7]                                                              | 8      | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|dvfs_core_ip | u_dvfs_core_ip_dut_inst/u_dvfs_core_ip_src_dvfs_core_hdl/u_LMS_predictor/u_nfp_add_comp/Delay14_reg_reg[7]                                                                 | 8      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|dvfs_core_ip | u_dvfs_core_ip_dut_inst/u_dvfs_core_ip_src_dvfs_core_hdl/u_dvfs_fsm/delayMatch1_reg_reg[29]                                                                                | 30     | 1     | YES          | NO                 | YES               | 0      | 1       | 
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+
+Dynamic Shift Register Report:
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name       | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | memory_reg[3]  | 20     | 20         | 20     | 0       | 0      | 0      | 0      | 
+|dsrl__1     | memory_reg[3]  | 2      | 2          | 2      | 0       | 0      | 0      | 0      | 
+|dsrl__2     | memory_reg[31] | 34     | 34         | 0      | 34      | 0      | 0      | 0      | 
+|dsrl__3     | memory_reg[31] | 13     | 13         | 0      | 13      | 0      | 0      | 0      | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++--------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                     | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dvfs_core_ip_src_nfp_mul_single | Dynamic     | -      | -      | -      | -      | 42     | -    | -    | -    | -    | -     | 0    | 1    | 
++--------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BIBUF      |   130|
+|2     |BUFG       |     5|
+|3     |CARRY4     |   138|
+|4     |DSP48E1    |     1|
+|5     |LUT1       |   396|
+|6     |LUT2       |   509|
+|7     |LUT3       |   720|
+|8     |LUT4       |   375|
+|9     |LUT5       |   382|
+|10    |LUT6       |   651|
+|11    |MMCME2_ADV |     1|
+|12    |MUXF7      |     1|
+|13    |PS7        |     1|
+|14    |SRL16      |     2|
+|15    |SRL16E     |    65|
+|16    |SRLC32E    |    48|
+|17    |FDRE       |  3490|
+|18    |FDSE       |    51|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:06 ; elapsed = 00:02:19 . Memory (MB): peak = 2132.418 ; gain = 1337.016
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 512 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:25 ; elapsed = 00:02:08 . Memory (MB): peak = 2132.418 ; gain = 1337.016
+Synthesis Optimization Complete : Time (s): cpu = 00:02:06 ; elapsed = 00:02:19 . Memory (MB): peak = 2132.418 ; gain = 1337.016
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.229 . Memory (MB): peak = 2132.418 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 143 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2146.000 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  SRL16 => SRL16E: 2 instances
+
+Synth Design complete | Checksum: 274c255a
+INFO: [Common 17-83] Releasing license: Synthesis
+287 Infos, 271 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:17 ; elapsed = 00:02:36 . Memory (MB): peak = 2146.000 ; gain = 1579.918
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 2146.000 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/projects/dvfs_zed/matlab_scripts/hdl_prj/vivado_ip_prj/vivado_prj.runs/synth_1/system_top_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file system_top_wrapper_utilization_synth.rpt -pb system_top_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 20 11:50:55 2025...

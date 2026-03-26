@@ -1,0 +1,457 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Thu Nov 20 12:27:26 2025
+# Process ID         : 25772
+# Current directory  : C:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.runs/dvfs_bd_dvfs_core_ip_0_0_synth_1
+# Command line       : vivado.exe -log dvfs_bd_dvfs_core_ip_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dvfs_bd_dvfs_core_ip_0_0.tcl
+# Log file           : C:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.runs/dvfs_bd_dvfs_core_ip_0_0_synth_1/dvfs_bd_dvfs_core_ip_0_0.vds
+# Journal file       : C:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.runs/dvfs_bd_dvfs_core_ip_0_0_synth_1\vivado.jou
+# Running On         : VimalRency
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 5 7530U with Radeon Graphics         
+# CPU Frequency      : 1996 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16441 MB
+# Swap memory        : 12064 MB
+# Total Virtual      : 28506 MB
+# Available Virtual  : 2271 MB
+#-----------------------------------------------------------
+source dvfs_bd_dvfs_core_ip_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:22 . Memory (MB): peak = 527.883 ; gain = 212.215
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/projects/dvfs_zed/matlab_scripts/hdl_prj/ipcore/dvfs_core_ip_v1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'.
+Command: synth_design -top dvfs_bd_dvfs_core_ip_0_0 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 24064
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1265.715 ; gain = 492.359
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'dvfs_bd_dvfs_core_ip_0_0' [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ip/dvfs_bd_dvfs_core_ip_0_0/synth/dvfs_bd_dvfs_core_ip_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip' [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip.v:28]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_dut' [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_dut.v:21]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_src_dvfs_core_hdl' [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_src_dvfs_core_hdl.v:42]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_src_LMS_predictor' [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_src_LMS_predictor.v:25]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_src_nfp_convert_double2single' [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_src_nfp_convert_double2single.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_src_nfp_convert_double2single' (0#1) [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_src_nfp_convert_double2single.v:24]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_src_nfp_mul_single' [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_src_nfp_mul_single.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_src_nfp_mul_single' (0#1) [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_src_nfp_mul_single.v:26]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_src_nfp_add_single' [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_src_nfp_add_single.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_src_nfp_add_single' (0#1) [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_src_nfp_add_single.v:24]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_src_nfp_relop_single_block' [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_src_nfp_relop_single_block.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_src_nfp_relop_single_block' (0#1) [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_src_nfp_relop_single_block.v:24]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_src_nfp_relop_single' [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_src_nfp_relop_single.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_src_nfp_relop_single' (0#1) [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_src_nfp_relop_single.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_src_LMS_predictor' (0#1) [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_src_LMS_predictor.v:25]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_src_dvfs_fsm' [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_src_dvfs_fsm.v:24]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_src_nfp_relop_single_block1' [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_src_nfp_relop_single_block1.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_src_nfp_relop_single_block1' (0#1) [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_src_nfp_relop_single_block1.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_src_dvfs_fsm' (0#1) [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_src_dvfs_fsm.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_src_dvfs_core_hdl' (0#1) [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_src_dvfs_core_hdl.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_dut' (0#1) [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_dut.v:21]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_reset_sync' [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_reset_sync.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_reset_sync' (0#1) [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_reset_sync.v:21]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_axi_lite' [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_axi_lite.v:21]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_addr_decoder' [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_addr_decoder.v:21]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_addr_decoder_write' [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_addr_decoder_write.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_addr_decoder_write' (0#1) [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_addr_decoder_write.v:21]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_addr_decoder_read' [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_addr_decoder_read.v:21]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_pulse_sync' [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_pulse_sync.v:21]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_sync_receive_clk' [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_sync_receive_clk.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_sync_receive_clk' (0#1) [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_sync_receive_clk.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_pulse_sync' (0#1) [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_pulse_sync.v:21]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_addr_decoder_read_registers' [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_addr_decoder_read_registers.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_addr_decoder_read_registers' (0#1) [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_addr_decoder_read_registers.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_addr_decoder_read' (0#1) [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_addr_decoder_read.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_addr_decoder' (0#1) [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_addr_decoder.v:21]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_axi_lite_module' [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_axi_lite_module.v:21]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_write_data_sync' [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_write_data_sync.v:21]
+INFO: [Synth 8-6157] synthesizing module 'dvfs_core_ip_write_sync_receive_clk' [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_write_sync_receive_clk.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_write_sync_receive_clk' (0#1) [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_write_sync_receive_clk.v:21]
+INFO: [Synth 8-226] default block is never used [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_write_data_sync.v:188]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_write_data_sync' (0#1) [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_write_data_sync.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_axi_lite_module' (0#1) [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_axi_lite_module.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip_axi_lite' (0#1) [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip_axi_lite.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_core_ip' (0#1) [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ipshared/ce23/hdl/dvfs_core_ip.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'dvfs_bd_dvfs_core_ip_0_0' (0#1) [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ip/dvfs_bd_dvfs_core_ip_0_0/synth/dvfs_bd_dvfs_core_ip_0_0.v:53]
+WARNING: [Synth 8-7129] Port addr_read[13] in module dvfs_core_ip_addr_decoder_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_read[12] in module dvfs_core_ip_addr_decoder_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_read[11] in module dvfs_core_ip_addr_decoder_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_read[10] in module dvfs_core_ip_addr_decoder_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_read[9] in module dvfs_core_ip_addr_decoder_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_read[8] in module dvfs_core_ip_addr_decoder_read is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr_read[7] in module dvfs_core_ip_addr_decoder_read is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 1407.355 ; gain = 634.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 1407.355 ; gain = 634.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 1407.355 ; gain = 634.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.198 . Memory (MB): peak = 1407.355 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ip/dvfs_bd_dvfs_core_ip_0_0/constraint/dvfs_core_ip_src_dvfs_core_hdl_interface_constraints.xdc] for cell 'inst'
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of [get_cells -hier -filter cdc_info==\"max_delay_clk_axi_to_ip\"]'. [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ip/dvfs_bd_dvfs_core_ip_0_0/constraint/dvfs_core_ip_src_dvfs_core_hdl_interface_constraints.xdc:8]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ip/dvfs_bd_dvfs_core_ip_0_0/constraint/dvfs_core_ip_src_dvfs_core_hdl_interface_constraints.xdc:8]
+WARNING: [Vivado 12-1008] No clocks found for command 'get_clocks -of [get_cells -hier -filter cdc_info==\"max_delay_clk_ip_to_axi\"]'. [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ip/dvfs_bd_dvfs_core_ip_0_0/constraint/dvfs_core_ip_src_dvfs_core_hdl_interface_constraints.xdc:14]
+Resolution: Verify the create_clock command was called to create the clock object before it is referenced.
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ip/dvfs_bd_dvfs_core_ip_0_0/constraint/dvfs_core_ip_src_dvfs_core_hdl_interface_constraints.xdc:14]
+Finished Parsing XDC File [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ip/dvfs_bd_dvfs_core_ip_0_0/constraint/dvfs_core_ip_src_dvfs_core_hdl_interface_constraints.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.gen/sources_1/bd/dvfs_bd/ip/dvfs_bd_dvfs_core_ip_0_0/constraint/dvfs_core_ip_src_dvfs_core_hdl_interface_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/dvfs_bd_dvfs_core_ip_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/dvfs_bd_dvfs_core_ip_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.runs/dvfs_bd_dvfs_core_ip_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.runs/dvfs_bd_dvfs_core_ip_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1448.176 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.110 . Memory (MB): peak = 1451.391 ; gain = 3.215
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:45 ; elapsed = 00:00:52 . Memory (MB): peak = 1451.391 ; gain = 678.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:45 ; elapsed = 00:00:52 . Memory (MB): peak = 1451.391 ; gain = 678.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:00:52 . Memory (MB): peak = 1451.391 ; gain = 678.035
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'axi_lite_wstate_reg' in module 'dvfs_core_ip_axi_lite_module'
+INFO: [Synth 8-802] inferred FSM for state register 'axi_lite_rstate_reg' in module 'dvfs_core_ip_axi_lite_module'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                         00000000
+                  iSTATE |                             0010 |                         00000001
+                 iSTATE0 |                             0100 |                         00000010
+                 iSTATE1 |                             1000 |                         00000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'axi_lite_rstate_reg' using encoding 'one-hot' in module 'dvfs_core_ip_axi_lite_module'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                             0001 |                         00000000
+                  iSTATE |                             0010 |                         00000001
+                 iSTATE0 |                             0100 |                         00000010
+                 iSTATE1 |                             1000 |                         00000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'axi_lite_wstate_reg' using encoding 'one-hot' in module 'dvfs_core_ip_axi_lite_module'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:47 ; elapsed = 00:00:55 . Memory (MB): peak = 1451.391 ; gain = 678.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   44 Bit       Adders := 1     
+	   2 Input   43 Bit       Adders := 1     
+	   2 Input   28 Bit       Adders := 1     
+	   2 Input   27 Bit       Adders := 2     
+	   2 Input   25 Bit       Adders := 2     
+	   2 Input   24 Bit       Adders := 2     
+	   2 Input   12 Bit       Adders := 2     
+	   3 Input   12 Bit       Adders := 1     
+	   3 Input   10 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 6     
+	   3 Input    8 Bit       Adders := 3     
+	   2 Input    6 Bit       Adders := 4     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 12    
++---XORs : 
+	   2 Input      1 Bit         XORs := 8     
++---Registers : 
+	               64 Bit    Registers := 4     
+	               53 Bit    Registers := 4     
+	               52 Bit    Registers := 1     
+	               49 Bit    Registers := 1     
+	               45 Bit    Registers := 1     
+	               42 Bit    Registers := 1     
+	               32 Bit    Registers := 10    
+	               31 Bit    Registers := 1     
+	               30 Bit    Registers := 1     
+	               29 Bit    Registers := 1     
+	               28 Bit    Registers := 6     
+	               27 Bit    Registers := 4     
+	               26 Bit    Registers := 7     
+	               25 Bit    Registers := 1     
+	               24 Bit    Registers := 4     
+	               23 Bit    Registers := 32    
+	               18 Bit    Registers := 2     
+	               16 Bit    Registers := 2     
+	               14 Bit    Registers := 2     
+	               12 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 5     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 51    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 5     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 8     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 171   
++---Muxes : 
+	   2 Input   53 Bit        Muxes := 2     
+	   2 Input   49 Bit        Muxes := 1     
+	   2 Input   47 Bit        Muxes := 1     
+	   2 Input   41 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 2     
+	   2 Input   28 Bit        Muxes := 2     
+	   2 Input   27 Bit        Muxes := 2     
+	   3 Input   26 Bit        Muxes := 3     
+	   2 Input   25 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 3     
+	   4 Input   24 Bit        Muxes := 1     
+	   2 Input   23 Bit        Muxes := 15    
+	   2 Input   11 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 3     
+	   4 Input   10 Bit        Muxes := 1     
+	   3 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 40    
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 5     
+	   3 Input    6 Bit        Muxes := 1     
+	   6 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 7     
+	   3 Input    5 Bit        Muxes := 1     
+	   4 Input    5 Bit        Muxes := 2     
+	   6 Input    5 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 10    
+	   3 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 3     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 60    
+	   4 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP Delay8_reg_reg[0], operation Mode is: (C+A2*B2)'.
+DSP Report: register Delay24_out1_reg is absorbed into DSP Delay8_reg_reg[0].
+DSP Report: register M_to_1_M_out1_reg is absorbed into DSP Delay8_reg_reg[0].
+DSP Report: register Delay8_reg_reg[0] is absorbed into DSP Delay8_reg_reg[0].
+DSP Report: operator Product_out1 is absorbed into DSP Delay8_reg_reg[0].
+DSP Report: operator Product_out1 is absorbed into DSP Delay8_reg_reg[0].
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:16 ; elapsed = 00:01:27 . Memory (MB): peak = 1532.824 ; gain = 759.469
+---------------------------------------------------------------------------------
+ Sort Area is  Delay8_reg_reg[0]_0 : 0 0 : 3090 3090 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++--------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                     | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dvfs_core_ip_src_nfp_mul_single | (C+A2*B2)'  | 24     | 17     | 41     | -      | 42     | 1    | 1    | 0    | -    | -     | 0    | 1    | 
++--------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:39 ; elapsed = 00:01:53 . Memory (MB): peak = 1651.348 ; gain = 877.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:40 ; elapsed = 00:01:54 . Memory (MB): peak = 1654.367 ; gain = 881.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:44 ; elapsed = 00:01:58 . Memory (MB): peak = 1683.520 ; gain = 910.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:56 ; elapsed = 00:02:11 . Memory (MB): peak = 1896.215 ; gain = 1122.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:56 ; elapsed = 00:02:11 . Memory (MB): peak = 1896.215 ; gain = 1122.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:57 ; elapsed = 00:02:12 . Memory (MB): peak = 1896.215 ; gain = 1122.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:57 ; elapsed = 00:02:12 . Memory (MB): peak = 1896.215 ; gain = 1122.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:57 ; elapsed = 00:02:12 . Memory (MB): peak = 1896.215 ; gain = 1122.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:57 ; elapsed = 00:02:12 . Memory (MB): peak = 1896.215 ; gain = 1122.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name  | RTL Name                                                                                                                                                                   | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|dvfs_core_ip | u_dvfs_core_ip_dut_inst/u_dvfs_core_ip_src_dvfs_core_hdl/u_LMS_predictor/u_dvfs_zed_simple_dvfs_core_hdl_LMS_predictor_nfp_convert_double2single/Delay23_PS_5_reg_reg[3]   | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|dvfs_core_ip | u_dvfs_core_ip_dut_inst/u_dvfs_core_ip_src_dvfs_core_hdl/u_LMS_predictor/u_dvfs_zed_simple_dvfs_core_hdl_LMS_predictor_nfp_convert_double2single/Delay33_PS_2_5_reg_reg[3] | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|dvfs_core_ip | u_dvfs_core_ip_dut_inst/u_dvfs_core_ip_src_dvfs_core_hdl/u_LMS_predictor/u_dvfs_zed_simple_dvfs_core_hdl_LMS_predictor_nfp_convert_double2single/Delay32_PS_2_5_reg_reg[4] | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|dvfs_core_ip | u_dvfs_core_ip_dut_inst/u_dvfs_core_ip_src_dvfs_core_hdl/u_LMS_predictor/u_nfp_mul_comp/Delay8_reg_1_reg[3]                                                                | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|dvfs_core_ip | u_dvfs_core_ip_dut_inst/u_dvfs_core_ip_src_dvfs_core_hdl/u_LMS_predictor/u_nfp_mul_comp/Delay13_reg_reg[5]                                                                 | 6      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|dvfs_core_ip | u_dvfs_core_ip_dut_inst/u_dvfs_core_ip_src_dvfs_core_hdl/u_LMS_predictor/u_nfp_add_comp/Delay18_reg_reg[7]                                                                 | 8      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|dvfs_core_ip | u_dvfs_core_ip_dut_inst/u_dvfs_core_ip_src_dvfs_core_hdl/u_LMS_predictor/u_nfp_add_comp/Delay6_reg_reg[1]                                                                  | 10     | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|dvfs_core_ip | u_dvfs_core_ip_dut_inst/u_dvfs_core_ip_src_dvfs_core_hdl/u_LMS_predictor/u_nfp_add_comp/Delay2_reg_reg[3][7]                                                               | 4      | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|dvfs_core_ip | u_dvfs_core_ip_dut_inst/u_dvfs_core_ip_src_dvfs_core_hdl/u_LMS_predictor/u_nfp_add_comp/Delay17_reg_reg[6][22]                                                             | 8      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|dvfs_core_ip | u_dvfs_core_ip_dut_inst/u_dvfs_core_ip_src_dvfs_core_hdl/u_LMS_predictor/u_nfp_add_comp/Delay17_reg_reg[6][21]                                                             | 5      | 22    | YES          | NO                 | YES               | 22     | 0       | 
+|dvfs_core_ip | u_dvfs_core_ip_dut_inst/u_dvfs_core_ip_src_dvfs_core_hdl/u_LMS_predictor/u_nfp_add_comp/Delay15_reg_reg[7][7]                                                              | 8      | 8     | YES          | NO                 | YES               | 8      | 0       | 
+|dvfs_core_ip | u_dvfs_core_ip_dut_inst/u_dvfs_core_ip_src_dvfs_core_hdl/u_LMS_predictor/u_nfp_add_comp/Delay14_reg_reg[7]                                                                 | 8      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|dvfs_core_ip | u_dvfs_core_ip_dut_inst/u_dvfs_core_ip_src_dvfs_core_hdl/u_dvfs_fsm/delayMatch1_reg_reg[29]                                                                                | 30     | 1     | YES          | NO                 | YES               | 0      | 1       | 
++-------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++--------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                     | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dvfs_core_ip_src_nfp_mul_single | Dynamic     | -      | -      | -      | -      | 42     | -    | -    | -    | -    | -     | 0    | 1    | 
++--------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |   120|
+|2     |DSP48E1 |     1|
+|3     |LUT1    |   347|
+|4     |LUT2    |   452|
+|5     |LUT3    |   389|
+|6     |LUT4    |   224|
+|7     |LUT5    |   314|
+|8     |LUT6    |   478|
+|9     |MUXF7   |     1|
+|10    |SRL16E  |    47|
+|11    |SRLC32E |     1|
+|12    |FDRE    |  2173|
+|13    |FDSE    |     5|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:57 ; elapsed = 00:02:12 . Memory (MB): peak = 1896.215 ; gain = 1122.859
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:28 ; elapsed = 00:02:04 . Memory (MB): peak = 1896.215 ; gain = 1078.824
+Synthesis Optimization Complete : Time (s): cpu = 00:01:58 ; elapsed = 00:02:13 . Memory (MB): peak = 1896.215 ; gain = 1122.859
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.124 . Memory (MB): peak = 1896.215 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 122 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1909.023 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: f6f6b91d
+INFO: [Common 17-83] Releasing license: Synthesis
+72 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:09 ; elapsed = 00:02:31 . Memory (MB): peak = 1909.023 ; gain = 1361.238
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1909.023 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.runs/dvfs_bd_dvfs_core_ip_0_0_synth_1/dvfs_bd_dvfs_core_ip_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP dvfs_bd_dvfs_core_ip_0_0, cache-ID = 302e390ff588ff0f
+INFO: [Coretcl 2-1174] Renamed 27 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1909.023 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/projects/dvfs_zed/dvfs_zed_project/dvfs_zed_project.runs/dvfs_bd_dvfs_core_ip_0_0_synth_1/dvfs_bd_dvfs_core_ip_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file dvfs_bd_dvfs_core_ip_0_0_utilization_synth.rpt -pb dvfs_bd_dvfs_core_ip_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 20 12:30:41 2025...
